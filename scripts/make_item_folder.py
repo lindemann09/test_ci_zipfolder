@@ -3,7 +3,7 @@ from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
 FOLDER = ["Distributions", "Assumptions"]
-DEST_FOLDER = "build/packages"
+DEST_FOLDER = "build/tarballs"
 EXCLUDE = ["-qti.zip", "-tv.zip", ".html"]
 
 def zip_subdirs(folder, destination_folder, exclude_suffix):
