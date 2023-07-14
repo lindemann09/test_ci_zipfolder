@@ -18,11 +18,12 @@ jobs:
 
       - name: commit results
         run: |
-         mv build/* ./
-         rmdir build
          git config user.email "lindemann09@users.noreply.github.com'"
          git config user.name "Github Actions"
          git checkout -b packages
+         mv build /tmp
+         rm * -rf
+         mv /tmp/build/* ./
          git add packages/.
          git commit -m "CI packaging"
          git push --set-upstream origin packages --force
