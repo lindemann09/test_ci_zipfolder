@@ -35,3 +35,16 @@ jobs:
           git add checksums.txt
           git commit -m "CI packaging"
           git push --set-upstream origin packages --force
+
+  other-job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: set up git
+        run: |
+          git config user.email "lindemann09@users.noreply.github.com'"
+          git config user.name "Github Actions"
+      - name: Restore Timestamps
+        run: |
+          sudo apt install git-restore-mtime
+          git restore-mtime
