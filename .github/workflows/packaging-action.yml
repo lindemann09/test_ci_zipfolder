@@ -22,7 +22,9 @@ jobs:
          git config user.name "Github Actions"
          git checkout -b packages
          mv build/* ./
+         sha1sum packages/* > checksums.txt
          git add packages/.
+         git add checksums.txt
          git commit -m "CI packaging"
          git push --set-upstream origin packages --force
 
