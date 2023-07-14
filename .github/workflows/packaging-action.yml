@@ -16,7 +16,7 @@ jobs:
           git config user.name "Github Actions"
       - name: Restore Timestamps
         run: |
-          apt install git-restore-mtime
+          sudo apt install git-restore-mtime
           git restore-mtime
 
       - uses: actions/setup-python@v4
