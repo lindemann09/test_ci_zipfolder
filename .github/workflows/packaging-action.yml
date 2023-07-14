@@ -11,12 +11,10 @@ jobs:
         with:
           python-version: '3.10'
       - run: |
+         git checkout -b packages
+         git pull
          python scripts/make_item_folder.py
          mv build/* ./
-         git checkout -b packages
-         git add packages/. --force
-         git commit -m "auto commit"
-         git push
 
 
 
@@ -26,7 +24,7 @@ jobs:
           #committer_name: GitHub Actions
           #committer_email: actions@github.com
           message: 'CI packaging'
-          new_branch: packs
+          new_branch: packages
           #pull: '--rebase --autostash ...'
           #cwd: './build'
           add: 'packages/. --force'
