@@ -13,14 +13,13 @@ jobs:
       - run: python scripts/make_item_folder.py
       - name: commit results
         run: |
-         git config --global user.email "actions@example.com"
+         git config --global user.email "lindemann09@users.noreply.github.com'"
          git config --global user.name "Github Actions"
          git checkout -b packages
          mv build/* ./
-         git --no-pager log  --pretty=oneline -15
          git add packages/.
-         git commit -m "CI packaging"
-         git --no-pager log  --pretty=oneline -15
+         git commit -am "CI packaging"
+         git push
 
       # - name: Commit packages
       #   uses: EndBug/add-and-commit@v9
