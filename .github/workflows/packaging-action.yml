@@ -2,12 +2,15 @@ name: packaging-actions
 run-name: ${{ github.actor }} is packaging
 on: [push]
 jobs:
-  check-bats-version:
+  item-folder:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - run: python scripts/make_item_folder.py
+      - run: |
+         python scripts/make_item_folder.py
+         ls build
+         ls build/packages
 
