@@ -13,10 +13,11 @@ jobs:
       - run: |
          python scripts/make_item_folder.py
          mv build/* ./
-         ls -a
          git checkout -b packages
-         git status
-         ls -a
+         git add packages/. --force
+         git commit -m "auto commit"
+         git push
+
 
 
       - name: Commit packages
