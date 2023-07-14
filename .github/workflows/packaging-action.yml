@@ -20,7 +20,8 @@ jobs:
         run: |
          git config user.email "lindemann09@users.noreply.github.com'"
          git config user.name "Github Actions"
-         git checkout -b packages
+         git fetch origin packages
+         git checkout packages
          mv build/* ./
          sha1sum packages/* > checksums.txt
          git add packages/.
