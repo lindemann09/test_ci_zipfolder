@@ -16,7 +16,6 @@ jobs:
          git config --global user.email "lindemann09@users.noreply.github.com'"
          git config --global user.name "Github Actions"
          git checkout -b packages
-         git fetch
          git push --set-upstream origin packages
          mv build/* ./
          git add packages/.
@@ -33,3 +32,15 @@ jobs:
       #     #pull: '--rebase --autostash ...'
       #     #cwd: './build'
       #     add: 'packages/. --force'
+
+  pushdemo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
