@@ -32,8 +32,7 @@ jobs:
           date > generated.txt
           git add generated.txt
           git commit -m "CI commit"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
