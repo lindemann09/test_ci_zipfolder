@@ -13,13 +13,13 @@ jobs:
       - run: python scripts/make_item_folder.py
       - name: commit results
         run: |
-         git config --global user.email "lindemann09@users.noreply.github.com'"
-         git config --global user.name "Github Actions"
+         git config user.email github-actions@github.com
+         git config user.name "${{ env.CI_COMMIT_AUTHOR }}"
          git checkout -b packages
          git push --set-upstream origin packages
          mv build/* ./
          git add packages/.
-         git commit -am "CI packaging"
+         git commit -m "CI packaging"
          git push
 
       # - name: Commit packages
@@ -39,10 +39,10 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           date > generated.txt
-          git config user.name github-actions
+          git config user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config user.email github-actions@github.com
           git checkout -b packages
           git push --set-upstream origin packages
           git add .
-          git commit -m "generated"
+          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
