@@ -30,6 +30,7 @@ jobs:
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
           git checkout -b packages
+          git branch --set-upstream-to=origin/packages packages
           git pull
           date > generated.txt
           git add generated.txt
