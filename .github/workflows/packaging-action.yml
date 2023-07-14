@@ -15,14 +15,14 @@ jobs:
           python-version: '3.10'
       - run: |
           python scripts/make_item_folder.py
-          mv build/* ./
+          cp build/packages ./packages -ra
 
       - name: commit results
         run: |
          git config user.email "lindemann09@users.noreply.github.com'"
          git config user.name "Github Actions"
-         git rm * -r --cached
          git checkout -b packages
+         git rm * -r --cached
          git add packages/.
          git commit -m "CI packaging"
          git push --set-upstream origin packages --force
