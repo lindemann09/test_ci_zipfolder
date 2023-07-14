@@ -26,12 +26,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
+      - name: Commit
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
-          git show-branch
-          git pull
           date > generated.txt
           git add generated.txt
           git commit -m "CI commit"
-          git push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
