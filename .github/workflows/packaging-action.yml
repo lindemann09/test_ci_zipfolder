@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} is packaging
 on:
   push:
     branches:
-      - main
+      - stable
 jobs:
   item-folder:
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
             any::tinytex
             any::xml2
 
-      - name: Install R exam developer
+      - name: Install Exams developer version
         run: Rscript -e 'install.packages("exams", repos = "http://R-Forge.R-project.org", dependencies = TRUE, type = "source")'
 
       - name: Install further stuff
