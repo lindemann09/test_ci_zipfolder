@@ -23,4 +23,4 @@ jobs:
           message: 'CI packaging'
           new_branch: packs
           #cwd: './build'
-          add: 'packs/. --force'
+          add: 'packages/. --force'
