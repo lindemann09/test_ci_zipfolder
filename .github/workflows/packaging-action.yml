@@ -1,7 +1,11 @@
 
 name: packaging-actions
 run-name: ${{ github.actor }} is packaging
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   item-folder:
     runs-on: ubuntu-latest
@@ -13,6 +17,7 @@ jobs:
       - run: |
          python scripts/make_item_folder.py
          mv build/* ./
+         ls -a
 
       - name: Commit packages
         uses: EndBug/add-and-commit@v9
