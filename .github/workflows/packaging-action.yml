@@ -26,4 +26,5 @@ jobs:
           #committer_email: actions@github.com
           message: 'CI packaging'
           new_branch: packages
+          pull: '--rebase --autostash ...'
           add: 'packages/.'
