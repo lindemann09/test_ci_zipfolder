@@ -10,18 +10,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Restore Timestamps
-        uses: chetan/git-restore-mtime-action@v1
-      - run: |
-          python scripts/make_item_folder.py
-
       - name: set up git
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
+      - name: Restore Timestamps
+        uses: |
+          apt install git-restore-mtime
+          git restore-mtime
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: python scripts/make_item_folder.py
 
       - name: commit results
         run: |
