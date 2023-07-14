@@ -17,11 +17,10 @@ jobs:
          git config --global user.name "Github Actions"
          git checkout -b packages
          mv build/* ./
-         git status
+         git --no-pager log  --pretty=oneline -15
          git add packages/.
          git commit -m "CI packaging"
-         git status
-         git push
+         git --no-pager log  --pretty=oneline -15
 
       # - name: Commit packages
       #   uses: EndBug/add-and-commit@v9
