@@ -22,5 +22,6 @@ jobs:
           #committer_email: actions@github.com
           message: 'CI packaging'
           new_branch: packs
+          pull: '--rebase'
           #cwd: './build'
           add: 'packages/. --force'
