@@ -20,5 +20,5 @@ jobs:
           message: 'CI packaging'
           new_branch: custom-new-branch
           cwd: './build'
-          add: '.'
+          add: '. --force'
 
