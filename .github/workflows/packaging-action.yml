@@ -3,46 +3,35 @@ name: packaging-actions
 run-name: ${{ github.actor }} is packaging
 on: [push]
 jobs:
-  item-folder:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - run: python scripts/make_item_folder.py
-      - name: commit results
-        run: |
-         git config user.email github-actions@github.com
-         git config user.name "${{ env.CI_COMMIT_AUTHOR }}"
-         git checkout -b packages
-         git push --set-upstream origin packages
-         mv build/* ./
-         git add packages/.
-         git commit -m "CI packaging"
-         git push
-
-      # - name: Commit packages
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     #committer_name: GitHub Actions
-      #     #committer_email: actions@github.com
-      #     message: 'CI packaging'
-      #     new_branch: packages
-      #     #pull: '--rebase --autostash ...'
-      #     #cwd: './build'
-      #     add: 'packages/. --force'
+  # item-folder:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.10'
+  #     - run: python scripts/make_item_folder.py
+  #     - name: commit results
+  #       run: |
+  #        git config user.email "lindemann09@users.noreply.github.com'"
+  #        git config user.name "Github Actions"
+  #        git checkout -b packages
+  #        git push --set-upstream origin packages
+  #        mv build/* ./
+  #        git add packages/.
+  #        git commit -m "CI packaging"
+  #        git push
 
   pushdemo:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: |
-          git config user.name ${{ env.CI_COMMIT_AUTHOR }}
-          git config user.email github-actions@github.com
+          git config user.email "lindemann09@users.noreply.github.com'"
+          git config user.name "Github Actions"
           git checkout -b packages
           git pull
           date > generated.txt
           git add generated.txt
-          git commit -m ${{ env.CI_COMMIT_MESSAGE }}
+          git commit -m "CI commit"
           git push --set-upstream origin packages
