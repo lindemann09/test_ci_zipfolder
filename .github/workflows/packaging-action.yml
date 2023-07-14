@@ -9,20 +9,29 @@ jobs:
   item-folder:
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install R packages
+        uses: Rscript -e 'source("scripts/install_requirements.R")'
+
+      - name: Install git restore timestamps
+        run: |
+          sudo apt install git-restore-mtime
+
       - uses: actions/checkout@v3
       - name: set up git
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
-      - name: Restore Timestamps
-        run: |
-          sudo apt install git-restore-mtime
           git restore-mtime
 
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - run: python scripts/make_item_folder.py
+      - name: Make tarballs
+        run: python scripts/make_item_folder.py
 
       - name: commit results
         run: |
@@ -35,16 +44,3 @@ jobs:
           git add checksums.txt
           git commit -m "CI packaging"
           git push --set-upstream origin packages --force
-
-  other-job:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: set up git
-        run: |
-          git config user.email "lindemann09@users.noreply.github.com'"
-          git config user.name "Github Actions"
-      - name: Restore Timestamps
-        run: |
-          sudo apt install git-restore-mtime
-          git restore-mtime
