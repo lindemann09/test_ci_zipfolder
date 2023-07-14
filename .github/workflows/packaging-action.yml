@@ -22,7 +22,7 @@ jobs:
          git config user.name "Github Actions"
          git fetch origin packages
          git checkout packages
-         mv build/* ./
+         cp build/* ./ -ra
          sha1sum packages/* > checksums.txt
          git add packages/.
          git add checksums.txt
