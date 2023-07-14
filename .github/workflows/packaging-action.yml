@@ -24,6 +24,8 @@ jobs:
          mv build /tmp
          rm * -rf
          mv /tmp/build/* ./
+         ls -la
+         git status
          git add packages/.
          git commit -m "CI packaging"
          git push --set-upstream origin packages --force
