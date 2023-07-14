@@ -17,17 +17,19 @@ jobs:
          git config --global user.name "Github Actions"
          git checkout -b packages
          mv build/* ./
+         git status
          git add packages/.
          git commit -m "CI packaging"
+         git status
+         git push
 
-
-      - name: Commit packages
-        uses: EndBug/add-and-commit@v9
-        with:
-          #committer_name: GitHub Actions
-          #committer_email: actions@github.com
-          message: 'CI packaging'
-          new_branch: packages
-          #pull: '--rebase --autostash ...'
-          #cwd: './build'
-          add: 'packages/. --force'
+      # - name: Commit packages
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     #committer_name: GitHub Actions
+      #     #committer_email: actions@github.com
+      #     message: 'CI packaging'
+      #     new_branch: packages
+      #     #pull: '--rebase --autostash ...'
+      #     #cwd: './build'
+      #     add: 'packages/. --force'
