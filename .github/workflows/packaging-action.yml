@@ -21,6 +21,6 @@ jobs:
           #committer_name: GitHub Actions
           #committer_email: actions@github.com
           message: 'CI packaging'
-          new_branch: packages
+          new_branch: packs
           #cwd: './build'
           add: 'packages/. --force'
