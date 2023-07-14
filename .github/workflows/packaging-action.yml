@@ -1,11 +1,7 @@
 
 name: packaging-actions
 run-name: ${{ github.actor }} is packaging
-on:
-  push:
-    branches:
-      - main
-
+on: [push]
 jobs:
   item-folder:
     runs-on: ubuntu-latest
@@ -17,7 +13,6 @@ jobs:
       - run: |
          python scripts/make_item_folder.py
          mv build/* ./
-         ls -a
 
       - name: Commit packages
         uses: EndBug/add-and-commit@v9
@@ -25,6 +20,6 @@ jobs:
           #committer_name: GitHub Actions
           #committer_email: actions@github.com
           message: 'CI packaging'
-          new_branch: packages
-          pull: '--rebase --autostash'
-          add: 'packages/.'
+          new_branch: packs
+          cwd: './build'
+          add: 'packages/. --force'
