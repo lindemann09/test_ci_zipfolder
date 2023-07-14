@@ -9,6 +9,7 @@ jobs:
   item-folder:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -26,7 +27,6 @@ jobs:
       - name: Install further stuff
         run: sudo apt install git-restore-mtime
 
-      - uses: actions/checkout@v3
       - name: set up git
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
