@@ -1,3 +1,4 @@
+
 name: packaging-actions
 run-name: ${{ github.actor }} is packaging
 on: [push]
@@ -18,7 +19,6 @@ jobs:
           #committer_name: GitHub Actions
           #committer_email: actions@github.com
           message: 'CI packaging'
-          #new_branch: itemfolder
+          new_branch: packages
           cwd: './build'
-          add: '. --force'
-
+          add: 'build/. --force'
