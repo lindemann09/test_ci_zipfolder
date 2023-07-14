@@ -14,7 +14,7 @@ jobs:
          python scripts/make_item_folder.py
          mv build/* ./
          ls -a
-         git checkout packages
+         git checkout -b packages
          git status
          ls -a
 
