@@ -22,6 +22,6 @@ jobs:
           #committer_email: actions@github.com
           message: 'CI packaging'
           new_branch: packs
-          pull: '--rebase --autostash ...'
+          #pull: '--rebase --autostash ...'
           #cwd: './build'
           add: 'packages/. --force'
