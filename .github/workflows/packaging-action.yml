@@ -38,12 +38,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          git config user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config user.name ${{ env.CI_COMMIT_AUTHOR }}
           git config user.email github-actions@github.com
           git checkout -b packages
-          git push --set-upstream origin packages
           git pull
           date > generated.txt
           git add generated.txt
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          git commit -m ${{ env.CI_COMMIT_MESSAGE }}
+          git push --set-upstream origin packages
