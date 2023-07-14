@@ -29,10 +29,9 @@ jobs:
       - run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
-          git checkout -b packages
-          git branch --set-upstream-to=origin/packages packages
+          git show-branch
           git pull
           date > generated.txt
           git add generated.txt
           git commit -m "CI commit"
-          git push --set-upstream origin packages
+          git push
