@@ -14,7 +14,10 @@ jobs:
          python scripts/make_item_folder.py
          mv build/* ./
          ls -a
+         git checkout packages
          git status
+         ls -a
+
 
       - name: Commit packages
         uses: EndBug/add-and-commit@v9
