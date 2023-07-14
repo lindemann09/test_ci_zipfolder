@@ -11,6 +11,7 @@ jobs:
           python-version: '3.10'
       - run: |
          python scripts/make_item_folder.py
+         mv build/packages packages
 
       - name: Commit packages
         uses: EndBug/add-and-commit@v9
@@ -18,7 +19,7 @@ jobs:
           #committer_name: GitHub Actions
           #committer_email: actions@github.com
           message: 'CI packaging'
-          new_branch: custom-new-branch
-          cwd: './build'
+          #new_branch: custom-new-branch
+          #cwd: './build'
           add: '. --force'
 
