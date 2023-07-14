@@ -13,6 +13,7 @@ jobs:
       - run: |
          python scripts/make_item_folder.py
          mv build/* ./
+         ls -a
 
       - name: Commit packages
         uses: EndBug/add-and-commit@v9
@@ -21,5 +22,5 @@ jobs:
           #committer_email: actions@github.com
           message: 'CI packaging'
           new_branch: packs
-          cwd: './build'
+          #cwd: './build'
           add: 'packages/. --force'
