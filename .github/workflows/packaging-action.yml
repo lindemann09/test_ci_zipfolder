@@ -19,7 +19,7 @@ jobs:
          mv build/* ./
          git add packages/.
          git commit -m "CI packaging"
-         git push --force
+         git push --set-upstream origin packages --force
 
   pushdemo:
     runs-on: ubuntu-latest
