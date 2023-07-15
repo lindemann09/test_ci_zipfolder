@@ -1,5 +1,8 @@
-remove_itemfolder_zips:
+remove_embedded_packages:
 	find . -name \*-ItemFolder.zip -type f -delete
+	find . -name \*-qti.zip -type f -delete
+	find . -name \*-tv.zip -type f -delete
+	find . -name \*.html -type f -delete
 
 clear:
 	rm build/ -rf
