@@ -9,3 +9,6 @@ tarballs:
 
 tarballs_zipped:
 	python -c "import packaging; packaging.tarballs(zipped=True)"
+
+checksums:
+	cd build; find ./ -type f -print0  | xargs -0 sha256sum > checksums.txt

@@ -26,6 +26,7 @@ jobs:
           git restore-mtime
 
       - run: make tarballs_zipped
+      - run: make checksums
 
       - name: commit results
         run: |
@@ -33,8 +34,6 @@ jobs:
           git checkout packages
           rm packages -rf
           mv build packages
-          sha1sum packages/tarballs/* > checksums.txt
           git add packages/.
-          git add checksums.txt
           git commit -m "CI packaging"
           git push --set-upstream origin packages --force
