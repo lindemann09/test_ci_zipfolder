@@ -4,7 +4,7 @@ remove_embedded_packages:
 	find . -name \*-tv.zip -type f -delete
 	find . -name \*.html -type f -delete
 
-clear:
+clean:
 	rm build/ -rf
 
 tarballs:
