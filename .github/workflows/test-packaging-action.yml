@@ -17,7 +17,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install further stuff
-        run: sudo apt install git-restore-mtime
+        run: sudo apt install make akgit-restore-mtime
 
       - name: set up git
         run: |
