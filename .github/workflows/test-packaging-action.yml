@@ -1,0 +1,41 @@
+
+name: test-packaging
+run-name: ${{ github.actor }} is packaging
+on:
+  push:
+    branches:
+      - main
+jobs:
+  item-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install further stuff
+        run: sudo apt install git-restore-mtime
+
+      - name: set up git
+        run: |
+          git config user.email "lindemann09@users.noreply.github.com'"
+          git config user.name "Github Actions"
+          git restore-mtime
+
+      - name: Make tarballs
+        run: Make tarballs
+
+      - name: commit results
+        run: |
+          git fetch origin packages
+          git checkout packages
+          rm packages -rf
+          mv build packages
+          sha1sum packages/tarballs/* > checksums.txt
+          git add packages/.
+          git add checksums.txt
+          git commit -m "CI packaging"
+          git push --set-upstream origin packages --force
