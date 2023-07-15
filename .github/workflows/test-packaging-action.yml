@@ -17,7 +17,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install stuff
-        run: sudo apt install make git-restore-mtime
+        run: sudo apt install make tree git-restore-mtime
 
       - name: set up git
         run: |
@@ -26,14 +26,20 @@ jobs:
           git restore-mtime
 
       - run: make tarballs_zipped
-      - run: make checksums
+      - run: make webpage
 
-      - name: commit results
-        run: |
-          git fetch origin packages
-          git checkout packages
-          rm packages -rf
-          mv build packages
-          git add packages/.
-          git commit -m "CI packaging"
-          git push --set-upstream origin packages --force
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
+
+
+      # - name: commit results
+      #   run: |
+      #     git fetch origin packages
+      #     git checkout packages
+      #     rm packages -rf
+      #     mv build packages
+      #     git add packages/.
+      #     git commit -m "CI packaging"
+      #     git push --set-upstream origin packages --force
