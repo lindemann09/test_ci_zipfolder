@@ -1,45 +1,45 @@
 
-name: test-packaging
-run-name: ${{ github.actor }} is packaging
-on:
-  # push:
-  #   branches:
-  #     - main
-jobs:
-  item-folder:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+# name: test-packaging
+# run-name: ${{ github.actor }} is packaging
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   item-folder:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
+#       - name: Set up Python
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: '3.10'
 
-      - name: Install stuff
-        run: sudo apt install make tree git-restore-mtime
+#       - name: Install stuff
+#         run: sudo apt install make tree git-restore-mtime
 
-      - name: set up git
-        run: |
-          git config user.email "lindemann09@users.noreply.github.com'"
-          git config user.name "Github Actions"
-          git restore-mtime
+#       - name: set up git
+#         run: |
+#           git config user.email "lindemann09@users.noreply.github.com'"
+#           git config user.name "Github Actions"
+#           git restore-mtime
 
-      - run: make tarballs_zipped
-      #- run: make compile
-      - run: make webpage
+#       - run: make tarballs_zipped
+#       #- run: make compile
+#       - run: make webpage
 
-      # - name: Deploy
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     folder: build # The folder the action should deploy.
+#       # - name: Deploy
+#       #   uses: JamesIves/github-pages-deploy-action@v4
+#       #   with:
+#       #     folder: build # The folder the action should deploy.
 
-      - name: commit results
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          rm packages -rf
-          mv build packages
-          git add packages/.
-          git commit -m "CI packaging"
-          git push --set-upstream origin gh-pages --force
+#       - name: commit results
+#         run: |
+#           git fetch origin gh-pages
+#           git checkout gh-pages
+#           rm packages -rf
+#           mv build packages
+#           git add packages/.
+#           git commit -m "CI packaging"
+#           git push --set-upstream origin gh-pages --force
