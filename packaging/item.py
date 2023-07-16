@@ -57,5 +57,4 @@ class Item(object):
             return True
 
         file_times = [getmtime(fl) for fl in self.path.rglob("*")] # mod time of all files
-        print(time_pack, max(file_times), time_pack-max(file_times) )
         return time_pack < max(file_times)
