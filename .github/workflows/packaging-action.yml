@@ -57,7 +57,7 @@ jobs:
           #mkdir /tmp/packages -p
           #test -d packages && cp packages /tmp -rap
           git checkout main
-          git checkout gh-packages -- packages
+          git checkout gh-pages -- packages
           #git restore-mtime
           #mv /tmp/packages ./
           ls packages/tarballs -lh
