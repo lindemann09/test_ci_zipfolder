@@ -13,6 +13,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set up git
+        run: |
+          git config user.email "lindemann09@users.noreply.github.com'"
+          git config user.name "Github Actions"
+          git status
+          ls
+          git fetch origin gh-pages
+          git checkout gh-pages
+          git status
+          ls
+
+
+          git checkout gh-pages -- packages
+          git restore-mtime
+
       - name: Install software
         run: sudo apt install make tree git-restore-mtime
 
@@ -41,15 +56,7 @@ jobs:
       # - name: Install Exams developer version
       #   run: Rscript -e 'install.packages("exams", repos = "http://R-Forge.R-project.org", dependencies = TRUE, type = "source")'
 
-      - name: Set up git
-        run: |
-          git config user.email "lindemann09@users.noreply.github.com'"
-          git config user.name "Github Actions"
-          git status
-          ls
-          git fetch origin gh-pages
-          git checkout gh-pages -- packages
-          git restore-mtime
+
 
 
       - run: make tarballs_zipped
