@@ -2,9 +2,11 @@
 name: packaging-actions
 run-name: ${{ github.actor }} is packaging
 on:
-  push:
-    branches:
-      - stable
+  # push:
+  #   branches:
+  #     - stable
+  release:
+    types: [published]
 jobs:
   item-folder:
     runs-on: ubuntu-latest
