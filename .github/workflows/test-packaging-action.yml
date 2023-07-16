@@ -26,6 +26,7 @@ jobs:
           git restore-mtime
 
       - run: make tarballs_zipped
+      #- run: make compile
       - run: make webpage
 
       - name: Deploy
