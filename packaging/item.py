@@ -11,7 +11,7 @@ class Item(object):
         if not self.path.is_dir():
             raise RuntimeError("Please specify an existing item folder.")
 
-    def _dest_file(self, suffix):
+    def dest_file(self, suffix):
         return self.dest.joinpath(self.path.name + suffix)
 
     def file_list(self, exculde_suffixes):
@@ -24,7 +24,7 @@ class Item(object):
         return rtn
 
     def zip(self, exculde_suffixes):
-        zip_path = self._dest_file(suffix=".zip")
+        zip_path = self.dest_file(suffix=".zip")
         print(zip_path.name)
         zipf = ZipFile(zip_path, 'w', ZIP_DEFLATED)
         for fl, rel_path in self.file_list(exculde_suffixes):
@@ -33,7 +33,7 @@ class Item(object):
         zipf.close()
 
     def tar(self, exculde_suffixes):
-        tar_path = self._dest_file(suffix=".tar")
+        tar_path = self.dest_file(suffix=".tar")
         print(tar_path.name)
         tarf = tarfile.open(tar_path, "w")
         for fl, rel_path in self.file_list(exculde_suffixes):
@@ -53,3 +53,5 @@ class Item(object):
                     pass
         return rtn
 
+    def rmd_file(self):
+        return self.path.joinpath(self.path.name+".Rmd")
