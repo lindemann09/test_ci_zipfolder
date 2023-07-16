@@ -48,14 +48,14 @@ jobs:
           git config user.name "Github Actions"
           git restore-mtime
 
-      - name: Copy packages to gh-branch
+      - name: Copy packages from gh-branch
         run: |
           git fetch origin gh-pages
           git checkout gh-pages
           git restore-mtime
-          git checkout main -- Makefile packaging Distributions
-          #git checkout gh-pages -- packages
-          #git restore-mtime
+          git checkout main
+          git checkout gh-pages -- packages
+          git restore-mtime
 
       - run: make tarballs_zipped
       #- run: make compile
