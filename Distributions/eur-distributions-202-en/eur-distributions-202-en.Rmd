@@ -6,7 +6,6 @@ Evaluate the following statements about transformation of scores:
 
 2. When raw scores are normalized, a non-linear transformation is performed.
 
-
 Answerlist
 ----------
 * Statement 1 and statement 2 are both true
