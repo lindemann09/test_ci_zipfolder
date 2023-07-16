@@ -46,6 +46,7 @@ jobs:
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
+          git checkout main
           git restore-mtime
 
       - name: Copy packages folder
@@ -53,11 +54,12 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
           git restore-mtime
-          mkdir /tmp/packages -p
-          test -d packages && cp packages /tmp -rap
+          #mkdir /tmp/packages -p
+          #test -d packages && cp packages /tmp -rap
           git checkout main
-          git restore-mtime
-          mv /tmp/packages ./
+          git checkout gh-packages -- packages
+          #git restore-mtime
+          #mv /tmp/packages ./
           ls packages/tarballs -lh
 
       - run: make tarballs_zipped
@@ -69,5 +71,5 @@ jobs:
           git checkout gh-pages
           ls packages -l
           git add packages/.
-          git commit -m "CI packaging"
+          git commit -am "CI packaging"
           git push --set-upstream origin gh-pages --force
