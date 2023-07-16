@@ -21,5 +21,5 @@ webpage:
 	cd build; \
 	find ./ -type f -print0  | xargs -0 sha256sum > checksums.txt; \
 	tree -H '.' -P "*.log|*.txt" \
-		-L 1 --noreport --charset utf-8 \
+		-L 2 --noreport --charset utf-8 \
 		-T "Packages ($(shell date))" > index.html
