@@ -31,7 +31,7 @@ class Item(object):
             print(zip_path.name)
             zipf = ZipFile(zip_path, 'w', ZIP_DEFLATED)
             for fl, rel_path in self.file_list(exculde_suffixes):
-                print("-", rel_path)
+                #print("-", rel_path)
                 zipf.write(fl, rel_path)
             zipf.close()
 
@@ -41,7 +41,7 @@ class Item(object):
             print(tar_path.name)
             tarf = tarfile.open(tar_path, "w")
             for fl, rel_path in self.file_list(exculde_suffixes):
-                print("-", rel_path)
+                #print("-", rel_path)
                 tarf.add(fl, rel_path)
             tarf.close()
 
@@ -57,4 +57,5 @@ class Item(object):
             return True
 
         file_times = [getmtime(fl) for fl in self.path.rglob("*")] # mod time of all files
+        print(time_pack, max(file_times))
         return time_pack < max(file_times)
