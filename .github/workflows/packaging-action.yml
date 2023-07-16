@@ -60,6 +60,7 @@ jobs:
         run: |
           git fetch origin gh-pages
           git checkout gh-pages
+          git restore-mtime
           rm packages -rf
           mv build packages
           git add packages/.
