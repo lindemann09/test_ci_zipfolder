@@ -4,7 +4,7 @@ from .item import Item
 
 SOURCE_FOLDER = ("Distributions", "Assumptions")
 BUILD = "build/"
-COMPILATION_CSV = "compl.tmp"
+COMPILATION_INSTRUCTION = "compl.instr"
 EXCLUDE = ("-qti.zip", "-tv.zip", ".html")
 
 
@@ -17,9 +17,9 @@ def tarballs(zipped=True):
         else:
             item.tar(EXCLUDE)
 
-def compilation_csv(formats=("qti", "tv", "html")):
+def compilation_file(formats=("qti", "tv", "html")):
     Path(BUILD).mkdir(parents=True, exist_ok=True)
-    fl = open(BUILD + COMPILATION_CSV, "w", encoding="utf-8")
+    fl = open(BUILD + COMPILATION_INSTRUCTION, "w", encoding="utf-8")
     fl.write('"format"\t"file"\t"name"\t"dir"\n')
     for frmt in formats:
         dest_folder = BUILD + frmt

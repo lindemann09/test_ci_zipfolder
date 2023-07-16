@@ -13,13 +13,16 @@ tarballs:
 tarballs_zipped:
 	python -c "import packaging; packaging.tarballs(zipped=True)"
 
-compile:
-	python -c "import packaging; packaging.compilation_csv()"
+compile: build/compl.instr
 	Rscript packaging/compile.R
+
+build/compl.instr: # compilation instruction
+	python -c "import packaging; packaging.compilation_file()"
 
 webpage:
 	cd build; \
+	rm compl.instr -f; \
 	find ./ -type f -print0  | xargs -0 sha256sum > checksums.txt; \
-	tree -H '.' -P "*.log|*.txt" \
+	tree -H '.' \
 		-L 2 --noreport --charset utf-8 \
 		-T "Packages ($(shell date))" > index.html

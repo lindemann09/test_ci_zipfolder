@@ -18,7 +18,7 @@ compile_rmd <- function(fmt, file, name, dir) {
   }
 }
 
-tbl <- read.delim("build/compl.tmp", sep = "\t", header = TRUE)
+tbl <- read.delim("build/compl.instr", sep = "\t", header = TRUE)
 error_log <- c("ERROR LOG")
 
 for (i in 1:nrow(tbl)) {
