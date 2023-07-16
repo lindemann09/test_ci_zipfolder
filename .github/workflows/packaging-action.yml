@@ -54,10 +54,9 @@ jobs:
           git restore-mtime
           mkdir /tmp/packages -p
           test -d packages && cp packages /tmp -ra
-          test -d testtest && cp testtest /tmp -ra
           git checkout main
           mv /tmp/packages ./
-          ls
+          ls packages -lh
 
       - run: make tarballs_zipped
       #- run: make compile
@@ -67,6 +66,5 @@ jobs:
         run: |
           git checkout gh-pages
           git add packages/.
-          git status
           git commit -m "CI packaging"
           git push --set-upstream origin gh-pages --force
