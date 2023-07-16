@@ -20,12 +20,10 @@ jobs:
           git status
           ls
           git fetch origin gh-pages
-          git checkout gh-pages
+          git checkout gh-pages -- packages
           git status
           ls
 
-
-          git checkout gh-pages -- packages
           git restore-mtime
 
       - name: Install software
