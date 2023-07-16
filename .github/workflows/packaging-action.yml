@@ -67,8 +67,7 @@ jobs:
       - name: commit results
         run: |
           git checkout gh-pages
-          ls -l
-          ls packages
+          ls packages -l
           git add packages/.
           git commit -m "CI packaging"
           git push --set-upstream origin gh-pages --force
