@@ -29,18 +29,17 @@ jobs:
       #- run: make compile
       - run: make webpage
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build # The folder the action should deploy.
+      # - name: Deploy
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: build # The folder the action should deploy.
 
-
-      # - name: commit results
-      #   run: |
-      #     git fetch origin packages
-      #     git checkout packages
-      #     rm packages -rf
-      #     mv build packages
-      #     git add packages/.
-      #     git commit -m "CI packaging"
-      #     git push --set-upstream origin packages --force
+      - name: commit results
+        run: |
+          git fetch origin gh-pages
+          git checkout gh-pages
+          rm packages -rf
+          mv build packages
+          git add packages/.
+          git commit -m "CI packaging"
+          git push --set-upstream origin packages --force
