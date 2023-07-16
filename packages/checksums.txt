@@ -1,4 +1,4 @@
-4cb533f18645d6151fc006925b0b5c1fa241a7726d46e40f7990c9efbaa291e8  ./index.html
+7b38f0480789cd50bfebbe36e8aa086ad3c5f34d08a18799b97b2d9d990d65a6  ./index.html
 eb7508ce3210d576e57d249a5f4b0ee3a7a12b1012509c0279162ad412d624fd  ./tarballs/uu-Critical-value-801-nl.zip
 91500c392be452ce9081940e1c417d895da42d641a99f669ff689d7779aeedf2  ./tarballs/vufgb-bivariatestatistics-007-nl.zip
 bbc4f6d3a1475961809431af10bb47b24a6ad8d0550e2aed6947232bee4485ba  ./tarballs/vufgb-samplingdistributions-018-nl.zip
@@ -3049,4 +3049,4 @@ c7fd63e41f55d186598945ce1c601f96deb6e743e107d89595c5c6d5d5504905  ./tarballs/eur
 9018e03496f461b0a91520fdab4fef4c0b6cc2456f5cadb2be5df97a91db8ab1  ./tarballs/uu-Paired-samples-800-nl.zip
 ac7d1b4c6b9159ce5789c73d62cb7595f0d78ac19fa4661b12ef400a97659d49  ./tarballs/vufsw-multiple_linear_regression-2098-nl.zip
 3b73ad0020dc58ac3bf3bbf4a1e0b42f186e00952e6095e274b83d9f737e5144  ./tarballs/vufgb-confidenceintervals-039-nl.zip
-587fd58c2cd8515f18d57aa823d1c663a85f0949de097eb744c32cb3398d7774  ./checksums.txt
+810e37821c5d37b57b6e987936af96a25a70c5b7799b3ad0a6f7837c98b3a17a  ./checksums.txt
