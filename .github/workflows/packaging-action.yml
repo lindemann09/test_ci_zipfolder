@@ -11,6 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install software
+        run: sudo apt install make tree git-restore-mtime
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -33,30 +36,30 @@ jobs:
             any::RJSONIO
             any::tinytex
             any::xml2
-
       - name: Install Exams developer version
         run: Rscript -e 'install.packages("exams", repos = "http://R-Forge.R-project.org", dependencies = TRUE, type = "source")'
 
-      - name: Install further stuff
-        run: sudo apt install git-restore-mtime
-
-      - name: set up git
+      - name: Set up git
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
-          git restore-mtime
 
-      - name: Make tarballs
-        run: python scripts/make_item_folder.py
+      - run: git restore-mtime
+      - run: make tarballs_zipped
+      - run: make compile
+      - run: make webpage
+
+      # - name: Deploy
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: build # The folder the action should deploy.
 
       - name: commit results
         run: |
-          git fetch origin packages
-          git checkout packages
+          git fetch origin gh-pages
+          git checkout gh-pages
           rm packages -rf
           mv build packages
-          sha1sum packages/tarballs/* > checksums.txt
           git add packages/.
-          git add checksums.txt
           git commit -m "CI packaging"
-          git push --set-upstream origin packages --force
+          git push --set-upstream origin gh-pages --force

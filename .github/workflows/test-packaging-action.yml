@@ -2,9 +2,9 @@
 name: test-packaging
 run-name: ${{ github.actor }} is packaging
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 jobs:
   item-folder:
     runs-on: ubuntu-latest
