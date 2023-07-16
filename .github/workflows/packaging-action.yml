@@ -53,13 +53,14 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
           git restore-mtime
-          #mkdir /tmp/packages -p
-          #test -d packages && cp packages /tmp -ra
+          mkdir /tmp/packages -p
+          test -d packages && cp packages /tmp -ra
           git checkout main
-          git checkout gh-pages -- packages
+          #git checkout gh-pages -- packages
           git restore-mtime
-          # mv /tmp/packages ./
+          mv /tmp/packages ./
           ls packages/tarballs -lh
+          #git checkout gh-pages -- hans
 
       - run: make tarballs_zipped
       #- run: make compile
