@@ -20,7 +20,13 @@ jobs:
           git status
           ls
           git fetch origin gh-pages
-          git checkout -b gh-pages -- packages
+          git checkout gh-pages
+          git status
+          ls
+          git checkout main
+          git status
+          ls
+          git checkout gh-pages -- packages
           git status
           ls
 
