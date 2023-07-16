@@ -46,14 +46,13 @@ jobs:
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
-          git checkout main
-          #git restore-mtime
+          git restore-mtime
 
       - name: Copy packages from gh-branch
         run: |
           git fetch origin gh-pages
           git checkout gh-pages
-          #git restore-mtime
+          git restore-mtime
           git checkout main
           git checkout gh-pages -- packages
           #git restore-mtime
