@@ -1,4 +1,4 @@
-d89c0570243cb70da4cf2810391cb2eddbdf2d3b6e96be391701d41a8a2553b7  ./index.html
+65fa82586a66f9a83c9390fae2fe42b7de8ccae7cfcdb7daa11f9f9a019f8569  ./index.html
 eb7508ce3210d576e57d249a5f4b0ee3a7a12b1012509c0279162ad412d624fd  ./tarballs/uu-Critical-value-801-nl.zip
 91500c392be452ce9081940e1c417d895da42d641a99f669ff689d7779aeedf2  ./tarballs/vufgb-bivariatestatistics-007-nl.zip
 bbc4f6d3a1475961809431af10bb47b24a6ad8d0550e2aed6947232bee4485ba  ./tarballs/vufgb-samplingdistributions-018-nl.zip
@@ -100,7 +100,7 @@ d300fff3188feb1fc94a985e936822e979d92a0e78abb83f86b537dc78801064  ./tarballs/vuf
 e07214f4eefcc114b9da05b6bb089d121edf997ecb5f42dbe58bccabb2572eb8  ./tarballs/uva-expected-value-665.zip
 fc76d6cb459afcc0bc42cab9fc00ed8be30b77f5e3c164b4180c6cd5a3007c9c  ./tarballs/uu-Twoway-ANOVA-848-nl.zip
 3cec3837443fd3a59b22dc3d039c6521eb0c039a4530791502117dedf54b16d0  ./tarballs/uu-Descriptive-statistics-610-nl.zip
-b128afcdd296d9fcf13e9469b5497487d2b30f2f0b77237b49aaf2de3521280e  ./tarballs/uu-Normal-700-en.zip
+de9612749d1bbc4eae6f72161028b3f0b2b9e8316230d4e5dcc376aff2a603b9  ./tarballs/uu-Normal-700-en.zip
 36e0e6b6107bd9ba45d48788d91e3b5fa141c4d493f1d700b0b22b9853fa0a35  ./tarballs/eur-descriptive-403-en.zip
 a7cac9fff352d84e4ace486607b4e6a7843490e0507ad70ada6c1abfa017d9ce  ./tarballs/eur-inferential_statistics-401-en.zip
 5506b20f2925259f645f2f7351e69466ba84656f7ff83de58231772fdff61998  ./tarballs/vufsw-pvalue-0102-nl.zip
@@ -202,7 +202,7 @@ e58f7d8ad08eddc550bc18a01410a10698f0846fb86370b785074a6a812b6f9b  ./tarballs/vuf
 5ba333b50df0dafd6eac3897c44365b17ccb485e82340c395f87ee93d35d6a5b  ./tarballs/eur-reliability-208-nl.zip
 25d692498840f2961b82932cc1ae2b76228e7966b5fcc132336d50b3edb1812e  ./tarballs/vufgb-equation-025-nl.zip
 7c11ed6cdec2b58291cf7bf23d25c2f18fca9af3fd42213eda36cfdc22249a11  ./tarballs/vufsw-independent_samples_means-1162-en.zip
-6c31c10892698c17e46085afae1c5e9d0582b19106d4ed5338440f049cc9eab4  ./tarballs/vufsw-normal-1081-en.zip
+0e17bd94c08cf82e76a781b6a9ee05745407465b4efd42de64d56c180b50b4d3  ./tarballs/vufsw-normal-1081-en.zip
 00782bef8e29739c854a744bf5c56dbdd55804093d54817e0d3885d280b61de8  ./tarballs/vufsw-one_sample_mean-1085-en.zip
 228859eb25691caec5a4faa3f16433a9336c5aff0d340bcb75bcdb265ed5ae63  ./tarballs/vufgb-samplingdistributions-035-nl.zip
 97e3bff1e4a97dbd099ad57a4de99afce612fc61b55b59ce4734b64863b0343f  ./tarballs/vufgb-equation-001-en.zip
@@ -323,7 +323,7 @@ fca0b6d7d8443b0463e7c273d73acd0a1db8efbd23044021e9ebcf7da80c4661  ./tarballs/vuf
 42c74bd03087a11a95844dbdeb0c49248776608a804b656f0dbae798c01af60d  ./tarballs/eur-inferential_statistics-235-nl.zip
 a02e04b53284eb4f11abd49d2ed8c30910a93ae939c1fcd37cf85db9332ad807  ./tarballs/vufgb-confidenceintervals-035-nl.zip
 9242cf6a166cccc13042894f77e469b4ae30ff44c54e12cf6224339391289212  ./tarballs/vufgb-expectedvalue-004-nl.zip
-c11e0140e4263eea4b93d09314d090480287a9d97b5e4611b5f539d1f53bb570  ./tarballs/vufgb-chisquared-001-nl.zip
+bc84e231bb7b7cce15fc8f640def7b847b28ce8f65ad2ab7cbf325a5dfd69642  ./tarballs/vufgb-chisquared-001-nl.zip
 64a9f0abfcc7b3e600b2af13bcfb51bd6561bd42917dfa54f1ca7b99ce3e3cec  ./tarballs/vufgb-confidenceintervals-031-nl.zip
 6602736a30c35632606af3d9c3d749005f6ab129abda5bcda2de43c1e16af996  ./tarballs/uu-Oneway ANOVA-858-nl.zip
 eafbd7d00e0e650b01bfbee5a5e4d73079b413599a06634980394e58435f948d  ./tarballs/uu-Twoway-ANOVA-874-nl.zip
@@ -335,7 +335,7 @@ c744fb898ddef23e5c45ff9e39e26be2e92ea209364ec70d0015f41d1322cfbe  ./tarballs/eur
 5b0253d24553d38fd0bed381d056b9465e89daf17a838333e1ff6ef24de04ef8  ./tarballs/eur-descriptive-215-nl.zip
 ca80ad43f11339dffb63ccaa9207d048bfc5746ea4b1e81a3ab0e5ff3ea0f5c4  ./tarballs/vufgb-anova-003-en.zip
 becbbebfde0815fa47ecae5408e30f3782a54d9393a88eaba7714f23e13fc075  ./tarballs/vufgb-residuals-004-nl.zip
-e3b9f325cbb4807f0e493af90717048b1ac965ab72a3e5d6bf11958882136a62  ./tarballs/eur-distributions-201-nl.zip
+40e0debe2c293508a8db9615021f915c37902a0312f1d070b4cd89896e8e2da2  ./tarballs/eur-distributions-201-nl.zip
 d178d8d74ba0205b6b22a4a0da797b3d4e5a655dfa197d46cd5c646e014be0d2  ./tarballs/eur-reliability-107-en.zip
 90ea3f66d5aceca82b0cbef2a5e75499cc0b6dacc50d99e7dc3d17119eba916f  ./tarballs/uu-Standardized-coefficient-809-nl.zip
 4dff919488d7e9bd99ce30d1eeb30ad4e914dd75c42240712b170e9aefc25a3c  ./tarballs/vufsw-paired_samples-1147-en.zip
@@ -383,7 +383,7 @@ e43c9f623e0bd162fbd83bcad62e08fdac7aeffd4d0ea9f7202d305a7e2e15ad  ./tarballs/vuf
 9bab58209e348d194a743ce8d8c16cf8a37573309ec7585e535ae240147f42a7  ./tarballs/vufgb-multinomiallogisticregression-009-nl.zip
 ea60611f0ebcb8896341cfdbd58d3befc1516403fd66e29e56980fc5908d55f3  ./tarballs/eur-descriptive-237-nl.zip
 09efba1e54efc9fa3c027b9c336a314c4b29ef6ef3e154dfe30c53a46b1e6baa  ./tarballs/vufgb-nhst-005-en.zip
-6f48a097372ed9733c3a9dcbd468c1a5068390a5b9b5503adff4c774a379dc4e  ./tarballs/vufgb-normal-001-en.zip
+0da12454b33d5e54a045c5a7b83fd2091f039155db0ea5c83814a6628549738f  ./tarballs/vufgb-normal-001-en.zip
 5c66630da461be56c8f8786d74bdcb29680d393650d3f708174749dfc946cb6a  ./tarballs/vufgb-dummies-009-nl.zip
 7dbb29e0f35da831cb3a412ccf73447e8dbe8b9f35d9ae8b6ae345a4cc153000  ./tarballs/uu-ANOVA-807-nl.zip
 49e30577dcc419e7f5d69c23b2eb82a280436fe5e930ad268695a41532d1794b  ./tarballs/eur-assumptions-103-nl.zip
@@ -479,7 +479,7 @@ eab9c3db20f5bd35310e94567d9bc96f7577ea6daae14775ac532017782d1035  ./tarballs/vuf
 997a21748d3977229187ce1c2143eb784b0e251cf548ea7a54c7d1a38276fdc2  ./tarballs/vufgb-mode-001-en.zip
 a404cf13e466cfc48d5ea5bf8ffcdddfc4e01fe4e913d91f6909c25e0f481427  ./tarballs/vufgb-mediation-001-en.zip
 80cc657f015d6764d7e3569b4d79431d5aa951ac6175419fb38d8c3afe8af03e  ./tarballs/vufgb-equation-002-en.zip
-e4257b8b3577431c894ec8a89d956132490c1a5be92063b6c166ac228939d9e4  ./tarballs/eur-distributions-202-en.zip
+fa89c909c538090d0d152e4a40448a91f3f2a894fd0c8c806e79acb164a3c480  ./tarballs/eur-distributions-202-en.zip
 fcc8926b46af2763593ef24bf5736f5876486caf3d03fc01fb2e44f9384e5827  ./tarballs/vufgb-mediation-009-nl.zip
 c604b6443cf41e930096eea57e19ed4feacc71ca162d75192e91ce6fe9b8f2a9  ./tarballs/vufgb-cohensd-001-nl.zip
 707a9e8488c79f5cc27ef77d476df9e138ee19e54e34abbe2f7018b9bb2d9bcd  ./tarballs/vufgb-twowayanova-002-en.zip
@@ -608,7 +608,7 @@ b3f0f5fc4626c5a3a1ef83bd481f607007ed05aeae160b152564bde750ee6036  ./tarballs/vuf
 38e6a81282eefe98f0a2d3ecc6cbd7ec9e34251723ffbed21044cd3c01b8db9d  ./tarballs/vufsw-mediation-0305-nl.zip
 9de919252abf24e507a361821912fe3388ad665cad55126d934de4461fee86f0  ./tarballs/uu-Oneway ANOVA-857-nl.zip
 9de3e13608e98b7b706aa9b4118651f9ddf77e493b92c41ba4e197eadece1c8b  ./tarballs/uu-Multiple-linear-regression-818-en.zip
-5ac45bf63262fdb34810c828cdae8cf49f383d504163fe6a3e91bafaadaa5559  ./tarballs/vufgb-normal-002-en.zip
+cce22de8a9a0d3c70ad17299bdf7cfcf99ecdeb0f098166b798a00af0c049bdc  ./tarballs/vufgb-normal-002-en.zip
 3f7bd4366d58660e3b6f106860a1e806539b2bd61d785322422d66d1c3c2fe5a  ./tarballs/eur-descriptive-212-nl.zip
 62066dc29263e2ebbf897b84fe56951b4b0863111694529b766ef6c0b9a0172e  ./tarballs/eur-inferential_statistics-259-nl.zip
 51c3a8b0273ab731bcea1b71fd203f1357c1688c321bce7b8d68adaa1356c64b  ./tarballs/eur-descriptive-213-nl.zip
@@ -780,7 +780,7 @@ a515898f24d7e8236194a954a8bbf0566fa03f0861285cc51b75dc1de0f45f6d  ./tarballs/vuf
 0e084b71ba18c68541be328f7ef49ca7ea36ccf06084e0665feb893a5a72ce64  ./tarballs/vufgb-mediation-018-nl.zip
 f26aeb6a9ef85dcb902d1129ada427342ea91986247abd06a97a0945feeb2011  ./tarballs/uu-Frequency table-804-nl.zip
 0ecbc34b09c0323b6f4446472a4dc90c409cd46c34d4918c6ee71ea100f8135c  ./tarballs/vufsw-assumptions-1009-en.zip
-2971532f1652fa4f3a4324f9dde52f846be3f3929d1358ae715fdc25124d9717  ./tarballs/eur-distributions-201-en.zip
+308f09e0b9850775f232bacc90b35fc38ce321832d80acaec4ca7ae0bfa0d131  ./tarballs/eur-distributions-201-en.zip
 1d00a554496dad7104bf88b05751251f1a357b526a8b9a942e6d21b2afc5983f  ./tarballs/vufgb-nominal-002-nl.zip
 e6ee05922eb5e6655310d4f4d56af48c4f67667d9e0fcd04e475ce472bdd4fe0  ./tarballs/vufsw-confidenceinterval-0066-nl.zip
 ff96d8a356a837d5db1f35397cbfe03e4bbf3467011d6d58d1423454b314e650  ./tarballs/uu-Power-809-en.zip
@@ -818,14 +818,14 @@ a3d8f7d4020792ea440f45902f7b9462a8a81c72e4a00f9ca6b72562c08b86ab  ./tarballs/vuf
 f9020b6f94447592c7a560aeff685736215686a1ca907fc0963614ba75056a33  ./tarballs/uu-Twoway-ANOVA-809-nl.zip
 9e38f55fe692a5ef3e5bac6e1ccd3bd0ae38f400e780170a11a6d0efadd80f87  ./tarballs/eur-factor-401-en.zip
 29a1f04eca21046ea17e7e7422e55cdd2e146f8e95ce701c547a86ad9e83b1f4  ./tarballs/vufgb-width-004-nl.zip
-7f78808beb240f23e3d364afe85ee49ea97605df868ffa4a4cc27b8704f20542  ./tarballs/vufgb-centrallimittheorem-001-nl.zip
+bc1dd76fac1f53aaa2b69b0675c6a69fe9d96e0d60cc6163d5654f00f4f9bc49  ./tarballs/vufgb-centrallimittheorem-001-nl.zip
 263247319c84d6f23e50b53948c82297c671496879436a7c55c619c8e221c5a0  ./tarballs/eur-descriptive-410-en.zip
 48522a98d635ee8dc967f23bad251c214bb1eba838f93646c58cb45e96339a7a  ./tarballs/vufsw-mediation-1367-nl.zip
 6907680de9bd5db3601eb35ccd3f20917f16894558f150ed69c64397fb7db81c  ./tarballs/eur-inferential_statistics-262-nl.zip
 9667aa350adecf111732bb3aa8bac62c4aec7db4b7e265fbdca5ce59119b0dae  ./tarballs/vufsw-equation-0157-nl.zip
 36c5a15f713992b5d613433cf1ec22896a66286a01b09b4711bcfe070cb57fd3  ./tarballs/vufsw-alternativehypothesis-0223-nl.zip
 fabb482e4136cae536bc18b7fc09bf72f26e55714593c19665588bdfd9a975f6  ./tarballs/vufgb-samplingdistributions-016-en.zip
-e348a110d0dd93fc12c73dd5048680f5421f7a087cf9824acdd8d807aae3cd79  ./tarballs/vufgb-chisquared-001-en.zip
+739208a6b041f03f641b2775512d6711110cbe99201fca624c196eab508e96d2  ./tarballs/vufgb-chisquared-001-en.zip
 ec1c4148b4349176829bd639cdd9e7ca0432838d02c42f2dd4c4c5107156aef4  ./tarballs/vufgb-bivariatestatistics-003-nl.zip
 d745047d053a6d744cf155f2199adccfae05de4da6bf42cd1304566e9dfa5f98  ./tarballs/vufgb-summarystatistics-003-nl.zip
 6e07b306ad1cb0a151bf9ccbd52381259b6dedb99cd0d5c57907a5dc2d0ec26f  ./tarballs/uu-Oneway ANOVA-880-nl.zip
@@ -1306,7 +1306,7 @@ cea16bc8a454d6e3a02724849bf1717e8976709d75445cfec3c0b4d01860064b  ./tarballs/vuf
 59a673776bc5e8b9df9ae396c50be5f6077c2761b59054ffe995e175ea7a4ff5  ./tarballs/vufsw-chisquaredforindependence-0168-nl.zip
 2d54e1613aa09dd556931c7965240735c821a42215deac28047002eb1dfe2c19  ./tarballs/uu-Power-601-nl.zip
 b99119e4e03dd654674cf6a0b9081a3b58a11544428cd007347f0f7e4734f0df  ./tarballs/uu-Width-802-en.zip
-580df4a4ee3d825484a04a895d3b39ff7a8ab956de2d82c0693281585cd70deb  ./tarballs/uu-Normal-800-nl.zip
+aa045246536249292afe409daa8e12415458faab22a2881418defead19adf985  ./tarballs/uu-Normal-800-nl.zip
 33976e5c21b9ada80722b4b7fd6c02446ec8ee369e16daf706f25ad22061e419  ./tarballs/vufsw-slope-1273-en.zip
 e71cba73605d1cbd2e812828454fbc68ba1b050d53358bbe3bb14dd21c5a6fa3  ./tarballs/uu-Summary Statistics-008-nl.zip
 3fcf39236590f89001b6914f6d7067defc5adef152aa42dce5466c65a6b1d1a4  ./tarballs/vufsw-confidence_intervals-1128-en.zip
@@ -1535,9 +1535,9 @@ bf81e270f60543a9bb046fecc0dfc2e02ccc864d7d1cafdedfd5a232583521d4  ./tarballs/vuf
 75c2647aab7f5185456d516df412b1d816e378841f279d6093809bfb2f46ef5b  ./tarballs/vufgb-moderation-010-nl.zip
 6282229a0e7665d47bed8b7a3bc315f11b839781af7072c6574baf3bc8e29e21  ./tarballs/uu-Equation-801-nl.zip
 07ca9facd652e8199804bc7036707aa5a657d27a997735057558a0b06e9e275f  ./tarballs/eur-inferential_statistics-224-nl.zip
-da6806138e530310f7243086d33cf110f7070667b4602cd89cefabec7137c6f3  ./tarballs/vufsw-normal-1075-en.zip
+7b193856077ae568b1d80ccda01b9b44c13c9d976bf6f19d094a4999c01883da  ./tarballs/vufsw-normal-1075-en.zip
 a38ad14f0b87841332da640252278393c8977aa8d131f2289c904c423043ea2c  ./tarballs/vufsw-paired_samples-1130-en.zip
-acdb497be00f6ebf7b2c3979cdbe0d1d4e0df4c3d734d962a3e81ad1e8d2d7f2  ./tarballs/vufgb-normal-002-nl.zip
+c197db041a6b141e6049b1adb75a9da1a1bb111ae559465c76bee0a71230369e  ./tarballs/vufgb-normal-002-nl.zip
 ab27d3136747d242c49a4b2fa6602ee7026234419e48f8ec2609b8aabe872392  ./tarballs/vufsw-slope-0220-nl.zip
 eb96759c19277bbe7358c36da2ad15814bd996e09d2192fe083f13785b7541e6  ./tarballs/eur-descriptive-202-nl.zip
 6a6c889b4409cb28ea001aa831244ce13050ea8e658e385d951930bf349860de  ./tarballs/vufsw-mediation-0303-nl.zip
@@ -1554,7 +1554,7 @@ acdc731b653a5bee0739fe9f09d72454e6fb0a8118fe28cc84ffc4bde81b9dee  ./tarballs/vuf
 9ddf12b129967f6723c2a7c10a6c7ee6bfdc966a16137d33d83e1a1a3df35292  ./tarballs/vufsw-measuresofspread-0069-nl.zip
 51c538d12ba84c907cf9eb1af62b415e3eed9064a5df29898d1baa138f38a9ee  ./tarballs/uu-t-test-800-en.zip
 f439365f15c878b6f6f24b0ad3cacc0e788e077abb4d7a38cf62433efb0da604  ./tarballs/vufsw-moderation-2094-nl.zip
-8a5abe5f52796d349837767af4fe319d79ffe9c85aba81d5c751dea05f10dcdb  ./tarballs/vufgb-centrallimittheorem-001-en.zip
+47158e552f8b1ec3a4c0a0e076befa9abffe9a5917eb111108df26f791fbd8f3  ./tarballs/vufgb-centrallimittheorem-001-en.zip
 5fb5ef45dbbe4f7ebe0985b74c65fc6b6ce21b5fe2e7ee3416a6f4630dbcbe44  ./tarballs/vufsw-moderation-1357-nl.zip
 80d5a7e320101bb8e3ac373f7b6468d434f34df9245f603d0fe49eb324dc4032  ./tarballs/vufsw-analysis-1213-en.zip
 b95679b86862502246b101d7ba193a654f24ee30e13b7af0ddc3258d7c1e4070  ./tarballs/eur-descriptive-250-en.zip
@@ -1671,7 +1671,7 @@ b798dbe4cb8c245f3e38b3b5498f7ac78f8d320aa4e8b0ac13616ec01ffde040  ./tarballs/vuf
 5bb7b146e82512cb7283dc7bb4ab2b27b4500a22f0fc3fe36e86765e6a461e58  ./tarballs/vufgb-etasquared-008-nl.zip
 b65a1a1333487b7ad7c65aa012bc87d5ce60a61cb638a24d3a364638ccafa0ac  ./tarballs/vufsw-prediction-2063-nl.zip
 985742f44be65895ec545e401c8b6292a96bcb94eabb4529c5f3a1247b7aa607  ./tarballs/vufsw-pearson-1332-nl.zip
-eeba0c529edfe8f96794387e8b26c944bd3ee494d0deeaf66516a753042ebab3  ./tarballs/uu-distributions-002-en.zip
+c494395b3a12000126f0efa98c749264c129e3eac18ac5b05f38522ae124e93e  ./tarballs/uu-distributions-002-en.zip
 b4463acf9f76546ddbb33de839d640b29a6b7d3d5c9955d413ae9f154098381d  ./tarballs/vufgb-elementaryprobability-003-nl.zip
 6e5390dea263826e814b90fbbe56cbe03e9def7ae6ec8d7e1a9279a6187e9219  ./tarballs/vufgb-onewayanova-003-nl.zip
 0b4a2d0535785f0e9696ef7a97a2fddf5f2ae6c8855f13c4fccfedd6833378b6  ./tarballs/uva-elementary-probability-949.zip
@@ -1694,7 +1694,7 @@ a8358669e3dfda5bc38d8eb1bbf46d08caf8aa56281f87e3011cedea77a1e3a6  ./tarballs/eur
 849cc1da95cd10547b4f77765de41b5ccbb5da0e9ed79c7b275cdf3f826a498a  ./tarballs/vufgb-bivariatestatistics-002-en.zip
 fbed07010d6a35581e8507922b709089df3c2739957093e7e0e9e1207e968597  ./tarballs/vufgb-chisquaredforindependence-004-nl.zip
 a875303d71c9b7ff289fc02a19fac052929fb65e650a727eff2eda42bb0a79f2  ./tarballs/vufsw-mediation-0248-nl.zip
-05242ecc07ff7205a1dd9046afede940eea9ded6b6077106daa6a4b36b8759e9  ./tarballs/eur-distributions-202-nl.zip
+5804acbb9290b269882c83578f64b04be72ae5cac5a78fc1838b413184928c54  ./tarballs/eur-distributions-202-nl.zip
 78c4ebd170b42bed19613bafc32e9d655e2bce71a46e63489b9453b801c943b2  ./tarballs/eur-inferential_statistics-215-en.zip
 72262846e8ad66c58017048242ff8ae4dd5c1865b82f2720e52417a60b6f8fdc  ./tarballs/uu-Critical-value-805-nl.zip
 bf68433a591ef821087a8365127f84fd7e591674aa9593eee745bea660f900dc  ./tarballs/uu-Standard Deviation-001-en.zip
@@ -1907,7 +1907,7 @@ cd99cf0c84ff65e7077b782b5267e3456cf2acee6a4e5266d2a1766b4a226e97  ./tarballs/vuf
 0e741e7ad8952ea48c1ae4b0e575a3746aae0ff020793652b3fffe057712b8dc  ./tarballs/vufgb-moderation-001-en.zip
 f93e19165cb74d68c9a8c885a993cbf07a0ca7bd81b1ce76318f81be7d03f36b  ./tarballs/vufgb-dummies-001-en.zip
 6065e153d10276cd7c3bd8a609b2ccb490bcb7d63274cbc05bad5e380a10920e  ./tarballs/vufsw-mixed_design_anova-1060-en.zip
-0011add5968f2eb378055e304963fdd63a04eaee6571020fc8e1f056b3369c51  ./tarballs/vufgb-centrallimittheorem-002-nl.zip
+07fa4307dd887de65f031e723481cf6171b460dee1854d69c649cec7da6ce35d  ./tarballs/vufgb-centrallimittheorem-002-nl.zip
 82b858971f07137544da585d408c403798850dc48f954a95320aa7efcf74f65b  ./tarballs/uu-Kruskal-Wallis-test-800-nl.zip
 a122ed38b4279101ffbabe204683de00f0b9f46227c9e7e824c254b16357e036  ./tarballs/uu-Oneway ANOVA-805-nl.zip
 ebff36c7d6653830e63f8aa5626d15a09c49f67977a19612e84b81f54a0df052  ./tarballs/uu-Eigenvalues-031-nl.zip
@@ -1944,7 +1944,7 @@ bf60fcbbbf4f85971a20a3ff31bae79f6f6cd6fad1d14289d373cd443244628f  ./tarballs/vuf
 2e94f3ec0a2514678bbc1eb3f9d2940e26ae2c04dab916e1d70f30f5e5b7aeb1  ./tarballs/vufgb-pearson-001-nl.zip
 ab72b614d15f5d89f82acaf0884bde5608079bff5c6491f3df7ae8aef7145677  ./tarballs/uu-measurement-level-801-en.zip
 f336bb9fe0d61fa23623b748f80e19c93b60497670f8b805d5d6c00b13478e7b  ./tarballs/vufgb-confidenceintervals-034-nl.zip
-b55c034044fcec35d1dd93f390d87f25c99500d6a00b62aea425114c4aceebcf  ./tarballs/vufgb-chisquared-003-nl.zip
+81f5997d1c8e425279343c1c37a6eafd8f0076cb43bab4a9efde1be58a409505  ./tarballs/vufgb-chisquared-003-nl.zip
 00bc881db4bd0b436d41af856534851f0a1a13b63d7859546b30ada4aca51a73  ./tarballs/vufgb-expectedvalue-001-nl.zip
 271838a6962947be2fa5806f17ace8313c6d1f5804193861bd3e8f897242d138  ./tarballs/vufsw-multicolinearity-2106-nl.zip
 354cd6fce453a745fc7f1e4c0a2ef37ac8a688bd85af4e4d52c7ec1edc03e971  ./tarballs/uu-Twoway-ANOVA-876-nl.zip
@@ -2000,7 +2000,7 @@ cae61aa3b0118fac03e745508a8fb8b61471e80001d87777862541bfdd8c7972  ./tarballs/vuf
 4f6f62e24d2a58477826877122f12817ad50c2d00c358d74995bff9e93198350  ./tarballs/uu-Power-824-nl.zip
 400ce944d5e286c75837c40462317ecc86d3c9f2ac5ed9b6cd61c566721533d3  ./tarballs/uu-Paired-samples-802-en.zip
 cf4fca6e6a470dfdb6dbafdc64184b1b1b6016f66c61fb618e846635d3a83e6e  ./tarballs/vufsw-mediation-3034-en.zip
-2b0a443a8497d9d554645ab2e9ccdbfffc00b5797c5da3acde656f6c26781e39  ./tarballs/vufgb-normal-303-nl.zip
+23858ac4f2bc9914b72dff164c258e99ba462b3dffca5f4f0848f40fa5afdf2a  ./tarballs/vufgb-normal-303-nl.zip
 42cda290d802f4c01aadfa5cc1014e661a1e1da242767d64e3b6d4652417b535  ./tarballs/vufsw-confidenceinterval-1240-en.zip
 3e9475bbe8b84fbe6be5fc7da69db7f0a15c42088e95335345202bdb2fa6467c  ./tarballs/vufsw-correlation-1338-en.zip
 689164533f747cc8034eb4bfd583a666e02edf688fa01fada0bf9fd5c98d601e  ./tarballs/eur-inferential_statistics-124-en.zip
@@ -2172,7 +2172,7 @@ ab33a54448b635b7a98eebbb027ea97de19567d197e591fcee7fd43c085844e6  ./tarballs/vuf
 c640189a36ba28d5e6547b36da4a9c89c80d6a96b0fd2c2a2e2735f6ba7c9d73  ./tarballs/vufgb-chisquaredforindependence-001-en.zip
 785bccc081c421628581c8b7f6f597d6a1c5e24c64323ab2be30484fb5f9d46d  ./tarballs/vufsw-oneway_anova-1373-nl.zip
 7329e5b10f52c26c6b91def51876eda79f588de1ac985356ee3e515229a8d246  ./tarballs/uu-Twoway-repeated-measures-ANOVA-806-nl.zip
-f42055d1ad2014630c355f4f4898999964d86ccb591f96d46872e793a3afc400  ./tarballs/vufgb-normal-003-nl.zip
+f79d9ab9db43bf6db0cbfa1dd28bd67c76512ee944aab03992aaddd31c94062e  ./tarballs/vufgb-normal-003-nl.zip
 6ccfd89d741498b9c88682f91c04bbdce594cd7e612db76cf3f6b554d659f76e  ./tarballs/vufsw-slope-1309-nl.zip
 e9d144fcc0f3783ff5782869071966568028a5645060e456fd02b3ef7522c92a  ./tarballs/vufgb-equation-015-nl.zip
 87f3518fd339f12869c82e2527c4b3ad36dcb86727447c27927696376f73bc18  ./tarballs/uu-Measures of Location-800-en.zip
@@ -2220,7 +2220,7 @@ a7102c8749a063ffe3d2aaee23f99a0f55ee157a35ab672e61432e4d2762b751  ./tarballs/uva
 4cb208dcb9491525beb9d166b6263b1e063231b494d473b907eb800d268b1852  ./tarballs/uu-ANCOVA-872-nl.zip
 1e25f8a3173253b8eb359a4f049b81cae620ce577bbfe084b22b0de40b580146  ./tarballs/vufsw-mixeddesignanova-0320-nl.zip
 cb3d41c9e1f2542c24b9dc72e0b3a2944357d4f1ddf39473d2298f9d8e41425f  ./tarballs/uu-VIF-800-en.zip
-6642f73b10ec0697b2fe18d11e63c840244bf07548715504fcb199850d832ab5  ./tarballs/vufgb-chisquared-002-en.zip
+e9daf727d4191f6c92441232e0f6a6cd9006947ac74eae88842ec86d0c954c2e  ./tarballs/vufgb-chisquared-002-en.zip
 3fe26689cb5eed7474c24afe245158befc2fa890fdb1a24f5383073228356a12  ./tarballs/uu-Oneway ANOVA-812-nl.zip
 4f0b25af3396b84542cfb5a2dc501c4f7c9024002b0857143031f656cab20504  ./tarballs/vufgb-posthoctest-001-nl.zip
 ccfc222b820cb177532b531734bb2cf3284f4566de20793356a2c036b30e3a64  ./tarballs/uu-Measures-of-Location-801-nl.zip
@@ -2397,7 +2397,7 @@ c0b91bf1295f894810d51f10821bcb45258b9522f7772857ec40a9d5c1d201a9  ./tarballs/vuf
 a9ca15bb8f233361fa0ec0875c70b8d572e95acd70112b9c51dbdbfb82c0a22d  ./tarballs/vufgb-rsquared-002-en.zip
 06544d9cca0c96edeb829f713c42322686629446ae43b2365984e6362680761f  ./tarballs/vufsw-z-score-1110-en.zip
 4d5a6818c87122d5ca07889abf2209a3261ec8916ad11007bdf84b616388def0  ./tarballs/eur-factor-105-en.zip
-6b63b35ae6ab5893076b19cc62d4e8d36b47f83a85a1dfb0bb519e170e51240f  ./tarballs/vufsw-normal-1105-en.zip
+c00df7ca9380b6c64fc22854a186ba70f2cae763c0d1a4d1ab61e251cfe3444a  ./tarballs/vufsw-normal-1105-en.zip
 a22ec994473b140d6b364715c836537c6a3d469dc6572046251926e7a6c30ee1  ./tarballs/vufsw-conditional_probability-1234-en.zip
 340453c4e22ccc70e24eb690116ce3777eaf503b8decd5142ffec4a909133ee9  ./tarballs/vufsw-cronbachsalpha-1122-nl.zip
 d78d94bcc08798955f964a5eb8315e271a36d892f7e83594681c22474b99a83d  ./tarballs/vufsw-sampling_distributions-1116-en.zip
@@ -2501,7 +2501,7 @@ b1d632783acae9a9e2f4f0a1a2ec72ed47ce61cf55d2db29e2843303cf063b99  ./tarballs/vuf
 c5c40a482f475a453fa68f62b8cee7bf4e8cf860e45b7331c11430fc411cd17e  ./tarballs/vufgb-ancova-014-nl.zip
 b55819335812ef5bf406f05fc9976d00c6b9e91bb90bf9dd438408b5a074ee84  ./tarballs/uu-Null-hypothesis-800-nl.zip
 9cec060579d9e2ba26937905fa2da0d5cba569ed95113fea4f318073eecac708  ./tarballs/vufgb-multiplelinearregression-023-nl.zip
-f9bc379b8e58effaddd37c1dd7c357fa98c2bbec67374f0dad162f4c3240a3e3  ./tarballs/uu-distributions-001-en.zip
+dabd3937bd1a5e0d36b9ab8085636f87e4bb0cb801319a4132b78fee8cd01614  ./tarballs/uu-distributions-001-en.zip
 e0abc813e7227442a6a96d539a25a39e42f6bd6cdc5607012eb0b1efef6a3c3e  ./tarballs/eur-descriptive-104-en.zip
 c3715464fec80edb68c7db3341ee79eda3dea2948c0ab3d962a2268e3e7aad6c  ./tarballs/vufsw-confidencelevel-1180-en.zip
 0a7fc12e5474a697ff34f987edecbfc3b98f8edbd277e05c5dadce92c3c3e0ea  ./tarballs/eur-inferential_statistics-258-nl.zip
@@ -2675,7 +2675,7 @@ d76e6bd4000211c62fd1b9167dd34fa197c667d7d65a700e54dea7d544e1f65a  ./tarballs/vuf
 8642d53189471dc36d03d815ac75de485398f7062ec8b4311f52148fe7400bc6  ./tarballs/uu-Two-sided-hypothesis-802-nl.zip
 763daa65a55893a8c58d4f4d951458401f170bb25e08aa30ebfb170600367ada  ./tarballs/uu-Power-823-en.zip
 b1c6f0b4ecb6d109b1f93092b4d9adedf4e559245cfdc00f73a7ff769a2e14c0  ./tarballs/uu-Critical-value-809-nl.zip
-e0435247c138ed3833ecc13da760f48f8833ada119bd83cd0038d7b9f049e091  ./tarballs/vufsw-central_limit_theorem-1153-en.zip
+5db484d2be65411a93768cc4f5f87bfb4d010870ced6590afa2e3369f4934a3e  ./tarballs/vufsw-central_limit_theorem-1153-en.zip
 ee4a07afb8c47586ee64c59c68bfa05227e2761aced5de0ec6142fef0af93427  ./tarballs/vufsw-homogeneityofvariance-0309-nl.zip
 623588bbcc4138008702d745940af35436bf754662937e4c2a1738810a56e8d4  ./tarballs/vufgb-ancova-006-en.zip
 07aebdff0c4c618a745ac18f40b3e9cae02c254249d68f1895ae39f6d28dbce4  ./tarballs/uu-Effect-size-804-nl.zip
@@ -2730,7 +2730,7 @@ c3c1c6b7688230ab37b6f117991c79abb47696e39d906cee32a0cb85849fd21b  ./tarballs/vuf
 41a20b112c5896c108c3d2b4c8012c37bacbbd7ec7dde32b25a00e5c0eb2a86c  ./tarballs/vufsw-prediction-2064-nl.zip
 dc2ae9ed163e1bf566e19c81b6501dd68bed0f2d8515605364b394a7cf44331d  ./tarballs/vufsw-expectedvalue-0123-nl.zip
 9ffa7f79b87bc490e5c5e81024c792ba8077115db75bcdbf5d401fed64764e31  ./tarballs/vufsw-f-test_for_comparing_nested_models-1268-en.zip
-57e2d217df5a2be109dbb561af846c357c84740824f22d3fd6dd731ac855783a  ./tarballs/vufgb-normal-001-nl.zip
+8d627d99cae387e62c85fd2453a4d57296de945fad9c733bca239d0d881a2ceb  ./tarballs/vufgb-normal-001-nl.zip
 76e2ca2c18f7cd1c76c05ef6bde03aecb3d5090da83ac64668200405242cb18d  ./tarballs/vufsw-moderation-2052-nl.zip
 8abdbc019dbb1d1d4cbad87003bd6515ee2a5b43de578069d2f85411771f6e64  ./tarballs/eur-descriptive-417-en.zip
 b64dbc5d92bce27fa04f95f2008e9b017bad734158cd2acbbbab26756baff72b  ./tarballs/vufgb-mediation-012-nl.zip
@@ -3017,7 +3017,7 @@ a7bcabb1a1506ea6e43ee6bfd79099c7f270d42457fe45794a04addd21fb5d74  ./tarballs/vuf
 3b1865ce7887ce7964b9f82924aa3371e89ba683255c9826b4fd1d87c756cf4a  ./tarballs/vufsw-null_hypothesis-1172-en.zip
 7e566c59f52a42f3ac4d69f1a105512b7e864896ea4fa409f1f390e4c75e2062  ./tarballs/vufgb-ancova-030-nl.zip
 9d0befcc315fb1fdbdfd73b638dfb1a21b478a552f042bcc1b54006a44b414b0  ./tarballs/vufsw-cronbach'salpha-1248-en.zip
-521fdb503c4e573f0dc910435144287d77640d13c79582d6318e538215a330b4  ./tarballs/vufgb-chisquared-002-nl.zip
+b3710af68a1403fce1576b1717fb6562e111576957b2e830aa4d26c98812173f  ./tarballs/vufgb-chisquared-002-nl.zip
 fbdf796dafc46e5efe4c1798484fe1f212d08e303c9362617c3f199a3e0c2f94  ./tarballs/vufsw-chisquared-0112-nl.zip
 a8ae73ff36c045c3dc4a4e16071552ed3909699362f7707ccb8f2d2ada6d1bd6  ./tarballs/vufsw-twoway_anova-1376-nl.zip
 b89141b912537c2d06a1281f3e9bf4fea09a4a3f36f0992058855fab4559a885  ./tarballs/vufgb-marginoferror-001-nl.zip
@@ -3049,4 +3049,4 @@ c7fd63e41f55d186598945ce1c601f96deb6e743e107d89595c5c6d5d5504905  ./tarballs/eur
 9018e03496f461b0a91520fdab4fef4c0b6cc2456f5cadb2be5df97a91db8ab1  ./tarballs/uu-Paired-samples-800-nl.zip
 ac7d1b4c6b9159ce5789c73d62cb7595f0d78ac19fa4661b12ef400a97659d49  ./tarballs/vufsw-multiple_linear_regression-2098-nl.zip
 3b73ad0020dc58ac3bf3bbf4a1e0b42f186e00952e6095e274b83d9f737e5144  ./tarballs/vufgb-confidenceintervals-039-nl.zip
-196b1e3b3ab4cf4c8096ffdc839152b0ed02ea8496a75e8d34431e0eaa866218  ./checksums.txt
+9996984afc9e1da65fb2efcd39a386bb6417cc6f1749e186c3d9764672051e88  ./checksums.txt
