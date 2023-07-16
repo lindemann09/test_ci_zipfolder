@@ -54,13 +54,11 @@ jobs:
           git checkout gh-pages
           git restore-mtime
           mkdir /tmp/packages -p
-          test -d packages && cp packages /tmp -rp
+          test -d packages && cp packages /tmp -rap
           git checkout main
-          #git checkout gh-pages -- packages
           git restore-mtime
           mv /tmp/packages ./
           ls packages/tarballs -lh
-          #git checkout gh-pages -- hans
 
       - run: make tarballs_zipped
       #- run: make compile
