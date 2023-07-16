@@ -1,3 +1,4 @@
+aa6409979d7e2ee9605c8bf1ed5b076c0c395d8a7470ada230c7a24e936e134e  ./index.html
 1166684437919929313d4ac212f75e12d0489c07accc79336d7986f6d7b82ed9  ./compile-log.txt
 aa98f6726b397c4a31ca7c8cb757f134608e7dbce018fdcf0ea9420dcda9eaf3  ./compl.tmp
 f44f1101e7e38f3493afd4025b6d1b99f9a06f2c44b0ac4eb53babaff97c8b75  ./qti/uu-Kolmogorov-Smirnov-801-en-qti.zip
@@ -471,7 +472,7 @@ f4f76a7869cf6e4b993496204772c749d75ee1f4418d2ca1bbaccd36c7e12034  ./tarballs/vuf
 6e2db114bab79a717585b3545cbab5193eb14b9e64ab3f98d24740157b8fb24a  ./tarballs/vufsw-homoscedasticity-0278-nl.zip
 dd1ecf00374a47d3040e655f00a2c1d4eb28d5bf1d5587f12496a175544dff45  ./tarballs/vufgb-chisquared-002-nl.zip
 d4cf4265e4f5ad583e68ecef4f6483532993d19aa478c8026cd5286afccb7905  ./tarballs/vufgb-vif-005-nl.zip
-5d05a164db1f66c6f67ea48378859fde91d46b708435244d7b5989d7792d036a  ./checksums.txt
+c36a65c6536b70c556197e39b1d2433e853ec8de7f8e36a4f7db32e87a9b3050  ./checksums.txt
 7a434f9bf807c7a1acb698c33ea35c890d3f6aa292a7cd04e2777dfdb561dc1e  ./html/uu-Levene's-test-201-nl1.html
 fafebd78fe9b177cfee6f60c8d893d7dc4f8d3d2e763c0e0b825a4e4231c255c  ./html/vufgb-chisquared-001-nl1.html
 4a1dfc8987b382da6559bdf0234539a915cb68ca4f14e6f3b2a02700bcaaa917  ./html/vufsw-homogeneityofvariance-0263-en1.html
