@@ -48,6 +48,7 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
           git restore-mtime
+          git checkout main -- Makefile packaging
 
       - run: make tarballs_zipped
       #- run: make compile
