@@ -54,7 +54,7 @@ jobs:
           git checkout gh-pages
           git restore-mtime
           mkdir /tmp/packages -p
-          test -d packages && cp packages /tmp -ra
+          test -d packages && cp packages /tmp -rp
           git checkout main
           #git checkout gh-pages -- packages
           git restore-mtime
