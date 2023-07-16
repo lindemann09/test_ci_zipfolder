@@ -46,12 +46,17 @@ jobs:
         run: |
           git config user.email "lindemann09@users.noreply.github.com'"
           git config user.name "Github Actions"
+
+      - name: Copy packages folder
+        run: |
           git fetch origin gh-pages
           git checkout gh-pages
-          git checkout main
-          git checkout gh-pages -- packages
-          git status
           git restore-mtime
+          mkdir /tmp/packages -p
+          cp packages /tmp -ra 2>/dev/null
+          cp test /tmp -ra 2>/dev/null
+          git checkout main
+          mv /tmp/packages ./
 
       - run: make tarballs_zipped
       #- run: make compile
@@ -60,7 +65,6 @@ jobs:
       - name: commit results
         run: |
           git checkout gh-pages
-          ls
           git add packages/.
           git status
           git commit -m "CI packaging"

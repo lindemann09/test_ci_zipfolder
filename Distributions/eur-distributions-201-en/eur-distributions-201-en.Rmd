@@ -10,6 +10,7 @@ Answerlist
 * To be able to calculate percentile scores.
 
 
+
 Solution
 ========
 We normalize scores when we want to make the scores have a distribution that more closely resembles a normal distribution.
@@ -29,7 +30,7 @@ extype: schoice
 exsolution: 0100
 exsection: Distributions/Continuous/Normal
 exextra[Type]: Conceptual
-exextra[Program]: 
+exextra[Program]:
 exextra[Language]: English
 exextra[Level]: Statistical Literacy
 exshuffle: TRUE
