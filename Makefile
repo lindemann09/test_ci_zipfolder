@@ -5,7 +5,7 @@ remove_embedded_packages:
 	find . -name \*.html -type f -delete
 
 clean:
-	rm build/ -rf
+	rm packages/ -rf
 
 tarballs:
 	python -c "import packaging; packaging.tarballs(zipped=False)"
@@ -13,14 +13,14 @@ tarballs:
 tarballs_zipped:
 	python -c "import packaging; packaging.tarballs(zipped=True)"
 
-compile: build/compl.instr
+compile: packages/compl.instr
 	Rscript packaging/compile.R
 
-build/compl.instr: # compilation instruction
+packages/compl.instr: # compilation instruction
 	python -c "import packaging; packaging.compilation_file()"
 
 webpage:
-	cd build; \
+	cd packages; \
 	rm compl.instr -f; \
 	find ./ -type f -print0  | xargs -0 sha256sum > checksums.txt; \
 	tree -H '.' \

@@ -1,8 +1,8 @@
 from pathlib import Path
 from .item import Item
 
-BUILD = "build/"
-EXCLUDE_FOLDER = ("scripts", "packaging", "build")
+PACK_FOLDER = "packages/"
+EXCLUDE_FOLDER = ("scripts", "packaging", "packages", "build")
 EXCLUDE_FILES = ("-qti.zip", "-tv.zip", ".html")
 COMPILATION_INSTRUCTION = "compl.instr"
 
@@ -29,7 +29,7 @@ def subfolder(base_folder, exclude_folder):
 
 
 def tarballs(zipped=True):
-    dest_folder = BUILD + "tarballs"
+    dest_folder = PACK_FOLDER + "tarballs"
     Path(dest_folder).mkdir(parents=True, exist_ok=True)
     source_folder = subfolder(".", EXCLUDE_FOLDER)
     for item in item_list(source_folder, dest_folder):
@@ -40,12 +40,12 @@ def tarballs(zipped=True):
 
 
 def compilation_file(formats=("qti", "tv", "html")):
-    Path(BUILD).mkdir(parents=True, exist_ok=True)
+    Path(PACK_FOLDER).mkdir(parents=True, exist_ok=True)
     source_folder = subfolder(".", EXCLUDE_FOLDER)
-    fl = open(BUILD + COMPILATION_INSTRUCTION, "w", encoding="utf-8")
+    fl = open(PACK_FOLDER + COMPILATION_INSTRUCTION, "w", encoding="utf-8")
     fl.write('"format"\t"file"\t"name"\t"dir"\n')
     for frmt in formats:
-        pkg_fld = BUILD + frmt
+        pkg_fld = PACK_FOLDER + frmt
         Path(pkg_fld).mkdir(exist_ok=True)
         for item in item_list(source_folder, pkg_fld):
             if frmt in ("qti", "tv"):

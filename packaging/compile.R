@@ -18,7 +18,7 @@ compile_rmd <- function(fmt, file, name, dir) {
   }
 }
 
-tbl <- read.delim("build/compl.instr", sep = "\t", header = TRUE)
+tbl <- read.delim("packages/compl.instr", sep = "\t", header = TRUE)
 error_log <- c("ERROR LOG")
 
 for (i in 1:nrow(tbl)) {
@@ -38,4 +38,4 @@ for (i in 1:nrow(tbl)) {
   )
 }
 print(error_log)
-writeLines(error_log, "build/compile-log.txt")
+writeLines(error_log, "packages/compile-log.txt")
