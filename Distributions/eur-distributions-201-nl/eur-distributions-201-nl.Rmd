@@ -10,6 +10,7 @@ Answerlist
 * Het kunnen berekenen van percentielscores.
 
 
+
 Solution
 ========
 We normaliseren scores als we de scores een verdeling willen geven die meer lijkt op een normale verdeling.
@@ -29,7 +30,7 @@ extype: schoice
 exsolution: 0100
 exsection: Distributions/Continuous/Normal
 exextra[Type]: Conceptual
-exextra[Program]: 
+exextra[Program]:
 exextra[Language]: Dutch
 exextra[Level]: Statistical Reasoning
 exshuffle: TRUE
