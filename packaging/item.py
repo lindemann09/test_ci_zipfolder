@@ -1,4 +1,5 @@
 import tarfile
+import hashlib
 from os.path import getmtime
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -15,7 +16,7 @@ class Item(object):
     def package_file(self, suffix=""):
         return self.dest.joinpath(self.path.name + suffix)
 
-    def file_list(self, exculde_suffixes):
+    def file_list(self, exculde_suffixes=()):
         """returns list of tuples (filepath, filepath relative to base directory)"""
         rtn = []
         for fl in self.path.rglob("*"):
@@ -59,3 +60,18 @@ class Item(object):
 
         file_times = [getmtime(fl) for fl in self.path.rglob("*")] # mod time of all files
         return time_pack < max(file_times)
+
+    def file_hashes(self):
+        for fl in self.file_list():
+            h = _hash_file_content(fl)
+            print((fl, h))
+
+
+def _hash_file_content(filepath):
+    # args = (filename, hash_algorithm)
+    # helper function for multi threading of file hashing
+    hasher = hashlib.new("sha256")
+    with open(filepath, 'rb') as f:
+        for block in iter(lambda: f.read(64 * 1024), b''):
+            hasher.update(block)
+    return hasher.checksum

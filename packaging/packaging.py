@@ -56,6 +56,7 @@ def compilation_file(formats):
                 update = item.package_needs_update("-" + frmt + ".zip")
             else:
                 pack_name = item.package_file("").name
+                item.file_hashes()
                 if frmt == "html":
                     update = item.package_needs_update("1.html")
                 else:
