@@ -1,10 +1,12 @@
 from pathlib import Path
 from .item import Item
+import csv
 
 PACK_FOLDER = "packages/"
 EXCLUDE_FOLDER = ("scripts", "packaging", "packages", "build")
 EXCLUDE_FILES = ("-qti.zip", "-tv.zip", ".html")
 COMPILATION_INSTRUCTION = "compl.instr"
+
 
 def item_list(source_folders, package_folder):
     """list of all items in multiple folders"""
@@ -28,18 +30,19 @@ def subfolder(base_folder, exclude_folder):
     return rtn
 
 
-def tarballs(zipped=True):
-    dest_folder = PACK_FOLDER + "tarballs"
-    Path(dest_folder).mkdir(parents=True, exist_ok=True)
-    source_folder = subfolder(".", EXCLUDE_FOLDER)
-    for item in item_list(source_folder, dest_folder):
-        if zipped:
-            item.zip(EXCLUDE_FILES)
-        else:
-            item.tar(EXCLUDE_FILES)
+def tarballs():
+    with open(PACK_FOLDER + COMPILATION_INSTRUCTION, "r", encoding="utf-8") as fl:
+        csv_reader = csv.reader(fl, delimiter='\t')
+        for row in csv_reader:
+            if row[0] in ("tar", "zip"):
+                item = Item(Path(row[1]).parent, row[3])
+                if row[0]=="zip":
+                    item.zip(EXCLUDE_FILES)
+                else:
+                    item.tar(EXCLUDE_FILES)
 
 
-def compilation_file(formats=("qti", "tv", "html")):
+def compilation_file(formats):
     Path(PACK_FOLDER).mkdir(parents=True, exist_ok=True)
     source_folder = subfolder(".", EXCLUDE_FOLDER)
     fl = open(PACK_FOLDER + COMPILATION_INSTRUCTION, "w", encoding="utf-8")
@@ -59,5 +62,5 @@ def compilation_file(formats=("qti", "tv", "html")):
                     update = item.package_needs_update("")
             if update:
                 fl.write(
-                f'"{frmt}"\t"{item.rmd_file()}"\t"{pack_name}"\t"{pkg_fld}"\n')
+                    f'"{frmt}"\t"{item.rmd_file()}"\t"{pack_name}"\t"{pkg_fld}"\n')
     fl.close()
