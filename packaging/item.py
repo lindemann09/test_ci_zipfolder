@@ -50,7 +50,7 @@ class Item(object):
 
     def package_needs_update(self, suffix=""):
         """return true is package file is older or does not exists"""
-        return True
+        return True # FIXME use hashing timestamps are not reliable on server
         try:
             time_pack = getmtime(self.package_file(suffix)) # modification time of package
         except FileNotFoundError:
