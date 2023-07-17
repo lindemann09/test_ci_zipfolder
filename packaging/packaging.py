@@ -37,13 +37,13 @@ def tarballs():
                     item.tar(PACK_FOLDER + "tar", EXCLUDE_FILES)
 
 
-def compilation_file(formats, fingerprint_file="fingerprints.json"):
+def compilation_file(formats, fingerprint_filename="fingerprints.json"):
     if not isinstance(formats, (list, tuple)):
         formats = (formats, )
     Path(PACK_FOLDER).mkdir(parents=True, exist_ok=True)
     source_folders = subfolder(BASEFOLDER, EXCLUDE_FOLDER)
     # finger print file
-    fp_file = Path(PACK_FOLDER).joinpath(fingerprint_file)
+    fp_file = Path(PACK_FOLDER).joinpath(fingerprint_filename)
     try:
         hash_dict = load_fingerprint_file(fp_file)
     except FileNotFoundError:
