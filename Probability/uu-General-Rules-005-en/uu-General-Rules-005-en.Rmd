@@ -1,6 +1,7 @@
 Question
 ========
-  
+
+
 Five students conduct five different experiments. Each of the five experiments has five possible outcomes, denoted by $A, B, C, D,$ and $E$. No other outcomes are possible. Let $P(A), P(B), P(C), P(D),$ and $P(E)$ denote the probabilities with which these outcomes will be observed. Based on their data the students estimate these probabilities as follows:
 
 Student 1: $P(A)=0.15, P(B)=0.25, P(C)=0.13, P(D)=0.37, P(E)=0.10$
