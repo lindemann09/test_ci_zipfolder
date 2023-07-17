@@ -7,18 +7,26 @@ remove_embedded_packages:
 clean:
 	rm packages/ -rf
 
-tarballs: packages/compl.instr
+fingerprint_file: # next package build (tarballs or compile), will only generate items that were changed since than
+	python -c "import packaging; packaging.fingerprint_file()"
+
+tarballs_zipped:
+	python -c 'import packaging; packaging.compilation_file(formats=("zip"))' # compile instruction
 	python -c "import packaging; packaging.tarballs()"
+	rm packages/compl.instr -f
 
-compile: packages/compl.instr
+tarballs:
+	python -c 'import packaging; packaging.compilation_file(formats=("tar"))' # compile instruction
+	python -c "import packaging; packaging.tarballs()"
+	rm packages/compl.instr -f
+
+compile:
+	python -c 'import packaging; packaging.compilation_file(formats=("qti", "tv", "html"))' # compile instructions
 	Rscript packaging/compile.R
-
-packages/compl.instr: # compilation instruction
-	python -c 'import packaging; packaging.compilation_file(formats=("zip", "qti", "tv", "html"))'
+	rm packages/compl.instr -f
 
 webpage:
 	cd packages; \
-	rm compl.instr -f; \
 	find ./ -type f -print0  | xargs -0 sha256sum > checksums.txt; \
 	tree -H '.' \
 		-L 2 --noreport --charset utf-8 \

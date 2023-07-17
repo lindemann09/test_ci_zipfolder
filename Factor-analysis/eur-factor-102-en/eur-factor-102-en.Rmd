@@ -6,6 +6,7 @@ library(knitr)
 include_supplement("EUR-Factor-102-ENG-img102.png", recursive = TRUE)
 ```
 
+
 Question
 ========
 Below you can find the output of a factor analysis on 8 items measuring mutuism, alongside its relevant screeplot.
@@ -36,6 +37,6 @@ exsolution: 2
 extol: 0
 exsection: Factor analysis/Scree plot, Factor analysis/Exploratory factor analysis, Factor analysis/Eigenvalues, Factor analysis/Explained variance
 exextra[Type]: Interpreting graph
-exextra[Program]: 
+exextra[Program]:
 exextra[Language]: English
 exextra[Level]: Statistical Reasoning

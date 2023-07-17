@@ -1,4 +1,5 @@
-from .packaging import tarballs, compilation_file
 
+
+from .packaging import tarballs, compilation_file, fingerprint_file
 
 
