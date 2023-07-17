@@ -50,10 +50,11 @@ jobs:
           git checkout main
 
 
-      - name: Copy packages from gh-branch
+      - name: Checkout packages
         run: |
           git fetch origin gh-pages
-          git checkout gh-pages
+          git checkout gh-pages#
+          mkdir packages -p
           git checkout main
           git checkout gh-pages -- packages
 
