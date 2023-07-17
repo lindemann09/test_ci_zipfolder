@@ -1,4 +1,4 @@
-059a32b4eb2ade2fa2a6ffb0cb7123d26e6015f53b037e409cd654ad9681a689  ./index.html
+7982e7de9da915d1f922965a7fa3f2e1ea746a02aca53801a579162101a6a283  ./index.html
 1aa14c3fa58d6022b3e4b57c2760cc8454da7d426b13bbe5cc2cde94bd9d9c17  ./compile-log.txt
 322daa59e82308226fdc0dc43551685865eaba04006110e68be40d4a46c27db4  ./qti/vufsw-hypothesis-1185-en-qti.zip
 410de6e1954ba93b3b8247767d38f1a13504b5dd1518a4af144ac5247e2db7af  ./qti/vufgb-samplingdistributions-030-nl-qti.zip
@@ -11517,7 +11517,7 @@ e1771f423e604fff8bbed9027def61bbbc1471d4e9772dc735b7d5dfe0ba3b08  ./tarballs/vuf
 6eedcd296b183333207423320000c9f4a7466b07bdb1adeda239726c1309d4fe  ./tarballs/uu-Paired-samples-800-nl.zip
 ae42fd667082111fab0a9a92973a87edcb50813447cc89bc3bc34b5e4e82e85a  ./tarballs/vufsw-multiple_linear_regression-2098-nl.zip
 13eb08245e8e58924031815091733140f1b981895e2eddfeb621ecb8071037ff  ./tarballs/vufgb-confidenceintervals-039-nl.zip
-58d62054ac1970f4a74ac165fbf5597a3f363239eb680ac286cb39903ed2b697  ./checksums.txt
+4ea5dd263a784ff3de36f72b73051e5abb160ff6ec472cb859027a407ef64f43  ./checksums.txt
 995a5252c0cfa37e148ebb9bd05430ddcb28197b3f1fb5f4b902c34ce5f68aef  ./html/vufsw-width-1181-en1.html
 8a4fc2926ec0f76d0012ba3b50c11e4c0ad42551e6c9b3d7026915434c257360  ./html/vufsw-moderation-0230-nl1.html
 152da9a736ec312b8dd968235bd8517d6d56f8ec8fb85d61d5acb59921aba7ea  ./html/vufgb-equation-023-nl1.html
