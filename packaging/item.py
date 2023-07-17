@@ -16,9 +16,13 @@ class Item(object):
         """item name"""
         return str(self.path)
 
-    def package_file(self, folder, suffix=""):
+    def package_name(self, suffix=""):
         """filename of the resulting package"""
-        return Path(folder).joinpath(self.path.name + suffix)
+        return self.path.name + suffix
+
+    def package_folder(self, basefolder):
+        """filename of the resulting package"""
+        return Path(basefolder).joinpath(self.path.parent)
 
     def file_list(self, exculde_suffixes=()):
         """returns list of of all files"""
@@ -30,9 +34,10 @@ class Item(object):
                     rtn.append(fl)
         return rtn
 
-    def zip(self, package_folder, exculde_suffixes):
+    def zip(self, pkg_basefolder, exculde_suffixes):
         """creates zip file"""
-        zip_path = self.package_file(package_folder, suffix=".zip")
+        zip_path = self.package_folder(pkg_basefolder).joinpath(
+                    self.package_name(".zip"))
         print(zip_path.name)
         zipf = ZipFile(zip_path, 'w', ZIP_DEFLATED)
         for fl in self.file_list(exculde_suffixes):
@@ -41,9 +46,10 @@ class Item(object):
             zipf.write(fl, rel_path)
         zipf.close()
 
-    def tar(self, package_folder, exculde_suffixes):
+    def tar(self, pkg_basefolder, exculde_suffixes):
         """creates tar file, if update is required"""
-        tar_path = self.package_file(package_folder, suffix=".tar")
+        tar_path = self.package_folder(pkg_basefolder).joinpath(
+                    self.package_name(".tar"))
         print(tar_path.name)
         tarf = tarfile.open(tar_path, "w")
         for fl in self.file_list(exculde_suffixes):
