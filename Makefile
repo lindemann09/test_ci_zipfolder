@@ -24,7 +24,6 @@ compile:
 	python -c 'import packaging; packaging.compilation_file(formats=("html", "qti", "tv"))' # compile instructions
 	Rscript packaging/compile.R
 	rm packages/compl.instr -f
-	# FIXME no html files yet
 
 webpage:
 	cd packages; \
