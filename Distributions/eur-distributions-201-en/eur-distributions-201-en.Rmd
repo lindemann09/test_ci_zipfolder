@@ -29,7 +29,7 @@ extype: schoice
 exsolution: 0100
 exsection: Distributions/Continuous/Normal
 exextra[Type]: Conceptual
-exextra[Program]: 
+exextra[Program]:
 exextra[Language]: English
 exextra[Level]: Statistical Literacy
 exshuffle: TRUE

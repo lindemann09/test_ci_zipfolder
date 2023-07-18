@@ -2,6 +2,7 @@ Question
 ========
 Beoordeel de volgende stelling: "De chi-kwadraatverdeling benadert een normale verdeling als de steekproefgrootte toeneemt."
 
+
 Answerlist
 ----------
 * Juist
